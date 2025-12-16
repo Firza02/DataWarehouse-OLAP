@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Schema name="SalesSchema">
+
+  <Cube name="SalesTime" defaultMeasure="Total Sales">
+    <Table name="stg_sales_monthly" schema="dw_adventureworks"/>
+
+    <Dimension name="Time">
+      <Hierarchy hasAll="true" allMemberName="All Time">
+        <Table name="stg_sales_monthly" schema="dw_adventureworks"/>
+        <Level name="Tahun" column="Tahun" type="Integer" uniqueMembers="false"/>
+        <Level name="Bulan" column="Bulan" type="Integer" uniqueMembers="false"/>
+      </Hierarchy>
+    </Dimension>
+
+    <Measure name="Total Sales"
+             column="TotalSales"
+             aggregator="sum"
+             formatString="#,###.00"/>
+  </Cube>
+
+</Schema>
