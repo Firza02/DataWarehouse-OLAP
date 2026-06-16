@@ -1,37 +1,25 @@
-📊 DataWarehouseOLAP — Business Intelligence Web Application
+# Data Warehouse & OLAP
 
-Sistem ini merupakan aplikasi Business Intelligence berbasis web yang memanfaatkan Data Warehouse, proses ETL, visualisasi Chart.js, serta OLAP Mondrian untuk menganalisis data AdventureWorks. Aplikasi ini menyajikan informasi seperti tren penjualan, total nilai pembelian vendor, data HR (cuti & gaji), serta pola penjualan per territory, lengkap dengan fitur eksplorasi multidimensi menggunakan drill-down dan analysis slicing melalui Mondrian JPivot.
+Website Data Warehouse & OLAP yang dirancang untuk mengintegrasikan, mengelola, dan menganalisis data guna menghasilkan informasi yang mendukung pengambilan keputusan. Sistem ini menyediakan visualisasi dan analisis multidimensi untuk membantu pengguna memahami tren serta performa data secara lebih efektif.
 
-Login as executive:
+## Installation
 
-username  : Executive
+1. Extract the project ZIP file and move the project folder to the `htdocs` directory.
+2. Start **Apache** and **MySQL** from the XAMPP Control Panel.
+3. Create a database named `datawarehouse_olap`.
+4. Import the provided SQL file into the database using phpMyAdmin.
+5. Open the following URL in your browser:
 
-passowrd  : Admin1
+```
+http://localhost/DataWarehouse-OLAP
+```
 
-/css               → stylesheet dan UI styling
+## Technologies Used
 
-/js                → Chart.js & konfigurasi grafik
-
-/images            → aset gambar untuk tampilan
-
-/fonts/icomoon     → ikon antarmuka
-
-/scss/bootstrap    → styling berbasis Bootstrap
-
-/dw_adventureworks → database
-
-index.php          → halaman utama aplikasi
-
-home.php           → dashboard & menu navigasi
-
-olap.php           → integrasi OLAP Mondrian (JPivot)
-
-koneksi.php        → konfigurasi koneksi MySQL
-
-login.php          → halaman autentikasi
-
-logout.php         → logout session
-
-data1.php          → pengolahan data untuk visualisasi
-
-linechartpenjualan.php → grafik tren penjualan bulanan
+- PHP
+- MySQL
+- HTML
+- CSS
+- JavaScript
+- Data Warehouse
+- OLAP (Online Analytical Processing)
