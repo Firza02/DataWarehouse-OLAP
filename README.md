@@ -29,6 +29,3 @@ http://localhost/DataWarehouse-OLAP
 - JavaScript
 - Data Warehouse
 - OLAP (Online Analytical Processing)
-
-### OLAP Analysis
-![OLAP Analysis](screenshots/olap-analysis.png)
