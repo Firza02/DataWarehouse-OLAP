@@ -1,18 +1,24 @@
 # Data Warehouse & OLAP
 
-Website Data Warehouse & OLAP yang dirancang untuk mengintegrasikan, mengelola, dan menganalisis data guna menghasilkan informasi yang mendukung pengambilan keputusan. Sistem ini menyediakan visualisasi dan analisis multidimensi untuk membantu pengguna memahami tren serta performa data secara lebih efektif.
+Website Data Warehouse & OLAP yang mengimplementasikan konsep data warehouse dan OLAP (Online Analytical Processing) untuk mendukung analisis data dan pengambilan keputusan. Sistem ini memungkinkan pengguna melakukan eksplorasi data melalui dashboard dan laporan multidimensi yang interaktif.
 
 ## Installation
 
 1. Extract the project ZIP file and move the project folder to the `htdocs` directory.
 2. Start **Apache** and **MySQL** from the XAMPP Control Panel.
-3. Create a database named `datawarehouse_olap`.
+3. Create a database named `dw_adventureworks`.
 4. Import the provided SQL file into the database using phpMyAdmin.
 5. Open the following URL in your browser:
 
 ```
 http://localhost/DataWarehouse-OLAP
 ```
+
+## Login Credentials
+
+| Role | Username | Password |
+|--------|----------|----------|
+| Executive | executive | admin1 |
 
 ## Technologies Used
 
@@ -23,3 +29,6 @@ http://localhost/DataWarehouse-OLAP
 - JavaScript
 - Data Warehouse
 - OLAP (Online Analytical Processing)
+
+### OLAP Analysis
+![OLAP Analysis](screenshots/olap-analysis.png)
